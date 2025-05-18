@@ -1,0 +1,108 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.5 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.5">
+  <diagram name="Pagina-1" id="HchcNy_YNlefWJN042IH">
+    <mxGraphModel dx="1582" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-2" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="180" width="470" height="690" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-9" value="Vooraad Controleren" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BrRGSM5eKvHxC9_mbLza-2">
+          <mxGeometry x="10" y="120" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-10" value="Artikel Toevoegen/bewerken" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BrRGSM5eKvHxC9_mbLza-2">
+          <mxGeometry x="130" y="10" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-11" value="Inkoop Plaatsen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BrRGSM5eKvHxC9_mbLza-2">
+          <mxGeometry x="280" y="220" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-12" value="Verkoop verwerken" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BrRGSM5eKvHxC9_mbLza-2">
+          <mxGeometry x="340" y="150" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-13" value="Verkoop Status bewerken" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BrRGSM5eKvHxC9_mbLza-2">
+          <mxGeometry x="260" y="100" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-15" value="Product bekijken" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BrRGSM5eKvHxC9_mbLza-2">
+          <mxGeometry x="50" y="180" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-14" value="Product bestellen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BrRGSM5eKvHxC9_mbLza-2">
+          <mxGeometry x="60" y="230" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" edge="1" parent="BrRGSM5eKvHxC9_mbLza-2" source="BrRGSM5eKvHxC9_mbLza-17" target="BrRGSM5eKvHxC9_mbLza-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-17" value="Bestelling ontvangen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BrRGSM5eKvHxC9_mbLza-2">
+          <mxGeometry x="130" y="359" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" edge="1" parent="BrRGSM5eKvHxC9_mbLza-2" source="BrRGSM5eKvHxC9_mbLza-16" target="BrRGSM5eKvHxC9_mbLza-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-16" value="Bestelling leveren" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BrRGSM5eKvHxC9_mbLza-2">
+          <mxGeometry x="45" y="300" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-18" value="Gebruikers Beheren" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BrRGSM5eKvHxC9_mbLza-2">
+          <mxGeometry x="60" y="600" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-19" value="Rapportage Generen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BrRGSM5eKvHxC9_mbLza-2">
+          <mxGeometry x="60" y="520" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-20" value="Database Beheren" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="BrRGSM5eKvHxC9_mbLza-2">
+          <mxGeometry x="60" y="440" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BrRGSM5eKvHxC9_mbLza-3" target="BrRGSM5eKvHxC9_mbLza-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BrRGSM5eKvHxC9_mbLza-3" target="BrRGSM5eKvHxC9_mbLza-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BrRGSM5eKvHxC9_mbLza-3" target="BrRGSM5eKvHxC9_mbLza-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="280" />
+              <mxPoint x="350" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BrRGSM5eKvHxC9_mbLza-3" target="BrRGSM5eKvHxC9_mbLza-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BrRGSM5eKvHxC9_mbLza-3" target="BrRGSM5eKvHxC9_mbLza-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-3" value="Magazijn medewerker" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="220" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BrRGSM5eKvHxC9_mbLza-6" target="BrRGSM5eKvHxC9_mbLza-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BrRGSM5eKvHxC9_mbLza-6" target="BrRGSM5eKvHxC9_mbLza-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-6" value="Leverancier" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="505" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BrRGSM5eKvHxC9_mbLza-7" target="BrRGSM5eKvHxC9_mbLza-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BrRGSM5eKvHxC9_mbLza-7" target="BrRGSM5eKvHxC9_mbLza-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-7" value="Klant" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="350" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BrRGSM5eKvHxC9_mbLza-8" target="BrRGSM5eKvHxC9_mbLza-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BrRGSM5eKvHxC9_mbLza-8" target="BrRGSM5eKvHxC9_mbLza-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BrRGSM5eKvHxC9_mbLza-8" target="BrRGSM5eKvHxC9_mbLza-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BrRGSM5eKvHxC9_mbLza-8" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="680" width="30" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
