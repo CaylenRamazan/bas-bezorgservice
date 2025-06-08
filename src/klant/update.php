@@ -1,5 +1,5 @@
 <?php
-    // auteur: studentnaam
+    // auteur: Caylen Ramazan
     // functie: update class Klant
 
     // Autoloader classes via composer

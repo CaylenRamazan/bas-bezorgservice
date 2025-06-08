@@ -1,5 +1,5 @@
 <?php 
-// auteur: studentnaam
+// auteur: Caylen Ramazan
 // functie: 
 
 // Autoloader classes via composer

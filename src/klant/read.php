@@ -1,5 +1,5 @@
 <!--
-	Auteur: Studentnaam
+	Auteur: Caylen Ramazan
 	Function: home page CRUD Klant
 -->
 <!DOCTYPE html>

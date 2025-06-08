@@ -1,32 +1,31 @@
 <?php
-// auteur: studentnaam
-// functie: unitests class Klant
+// auteur: Caylen Ramazan
+// functie: Unittest voor Klant insert
 
 use PHPUnit\Framework\TestCase;
 use Bas\classes\Klant;
 
-// Filename moet gelijk zijn aan de classname KlantTest
-class KlantTest extends TestCase{
-    
-	protected $klant;
+class KlantTest extends TestCase
+{
+    private $klant;
 
-    protected function setUp(): void {
+    protected function setUp(): void
+    {
         $this->klant = new Klant();
     }
 
-	// Methods moeten starten met de naam test....
-	public function testgetKlanten(){
-		$klanten = $this->klant->getKlanten();
-        $this->assertIsArray($klanten);
-		$this->assertTrue(count($klanten) > 0, "Aantal moet groter dan 0 zijn");
-	}
+    public function testInsertKlant()
+    {
+        // Voorbeeldgegevens (vervang evt. door random unieke strings om dubbele entries te voorkomen)
+        $testData = [
+            'klantNaam' => 'Test Gebruiker',
+            'klantEmail' => 'testuser@example.com',
+            'klantWoonplaats' => 'Teststad',
+            'klantAdres' => 'Teststraat 1',
+            'klantPostcode' => '1234AB'
+        ];
 
-	public function testGetKlant(){
-		$klantId = 1; // check of dit ook echt in de database bestaat!
-		$klant = $this->klant->getKlant($klantId);
-		$this->assertEquals($klantId, $klant['klantId']);
-	}
-	
+        $result = $this->klant->insertKlant($testData);
+        $this->assertTrue($result, "De klant moet succesvol worden toegevoegd.");
+    }
 }
-	
-?>
