@@ -1,5 +1,5 @@
 <?php
-// auteur: studentnaam
+// auteur: Caylen
 // functie: definitie class Database
 namespace Bas\classes;
 
@@ -49,3 +49,4 @@ class Database{
 	
 }
 ?>
+

@@ -1,36 +1,35 @@
-<!--
-	Auteur: Caylen Ramazan
-	Function: home page CRUD Klant
--->
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crud</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-
-<body>
-	<h1>CRUD Klant</h1>
-	<nav>
-		<a href='../index.html'>Home</a><br>
-		<a href='insert.php'>Toevoegen nieuwe klant</a><br><br>
-	</nav>
-	
 <?php
+// auteur: Caylen Ramazan
+// functie: read klanten
 
-// Autoloader classes via composer
 require '../../vendor/autoload.php';
-
 use Bas\classes\Klant;
 
-// Maak een object Klant
-$klant = new Klant;
+$klant = new Klant();
 
-// Start CRUD
-$klant->crudKlant();
+$zoekterm = $_GET['zoek'] ?? '';
 
+$klantenlijst = array_filter($klant->getKlanten(), function ($k) use ($zoekterm) {
+    return stripos($k['klantNaam'], $zoekterm) !== false;
+});
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Klant Overzicht</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<h1>CRUD Klant</h1>
+<a href='insert.php'>Nieuwe klant toevoegen</a>
+<form method="get">
+    <input type="text" name="zoek" placeholder="Zoek op klantnaam" value="<?= htmlspecialchars($zoekterm) ?>">
+    <button type="submit">Zoek</button>
+</form>
+
+<?php $klant->showTable($klantenlijst); ?>
+
 </body>
 </html>

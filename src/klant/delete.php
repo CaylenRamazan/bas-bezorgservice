@@ -1,23 +1,15 @@
-<?php 
-// auteur: Caylen Ramazan
-// functie: 
-
-// Autoloader classes via composer
+<?php
 require '../../vendor/autoload.php';
 use Bas\classes\Klant;
 
-if(isset($_POST["verwijderen"])){
-	
-	// Maak een object Klant
-	
-	
-	// Delete Klant op basis van NR
-	
+$klant = new Klant();
 
-	echo '<script>alert("Klant verwijderd")</script>';
-	echo "<script> location.replace('read.php'); </script>";
+if (isset($_GET['klantId'])) {
+	$klant->deleteKlant((int)$_GET['klantId']);
+	header("Location: read.php");
+	exit;
 }
-?>
+
 
 
 

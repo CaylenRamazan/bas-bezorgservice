@@ -1,52 +1,65 @@
 <?php
-    // auteur: Caylen Ramazan
-    // functie: update class Klant
+// auteur: Caylen Ramazan
+require '../../vendor/autoload.php';
+use Bas\classes\Klant;
 
-    // Autoloader classes via composer
-    require '../../vendor/autoload.php';
-    use Bas\classes\Klant;
-    
-    $klant = new Klant;
+$klant = new Klant();
 
-    if(isset($_POST["update"]) && $_POST["update"] == "Wijzigen"){
+// Stap 1: Als formulier verzonden is
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['klantId'])) {
+    $klantData = [
+        'klantId' => $_POST['klantId'],
+        'klantNaam' => $_POST['klantNaam'],
+        'klantEmail' => $_POST['klantEmail'],
+        'klantAdres' => $_POST['klantAdres'],
+        'klantPostcode' => $_POST['klantPostcode'],
+        'klantWoonplaats' => $_POST['klantWoonplaats']
+    ];
 
-        // Code voor een update
-        
-    }
+    $klant->updateKlant($klantData);
+    header("Location: read.php");
+    exit;
+}
 
-    if (isset($_GET['klantId'])){
-        $row = $klant->getKlant($_GET['klantId']);
-
-
+// Stap 2: Als pagina geopend wordt met GET (voor het eerst)
+if (isset($_GET['klantId'])) {
+    $klantData = $klant->getKlant((int)$_GET['klantId']);
+} else {
+    die("Geen klantId opgegeven.");
+}
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crud</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Klant bijwerken</title>
 </head>
 <body>
-<h1>CRUD Klant</h1>
-<h2>Wijzigen</h2>	
+
+<h2>Klant bijwerken</h2>
+
 <form method="post">
-<input type="hidden" name="klantId" 
-    value="<?php if(isset($row)) { echo $row['klantId']; } ?>">
-<input type="text" name="klantnaam" required 
-    value="<?php if(isset($row)) {echo $row['klantNaam']; }?>"> *</br>
-<input type="text" name="klantemail" required 
-    value="<?php if(isset($row)) {echo $row["klantEmail"]; }?>"> *</br></br>
-<input type="submit" name="update" value="Wijzigen">
-</form></br>
+    <input type="hidden" name="klantId" value="<?= htmlspecialchars($klantData['klantId']) ?>">
+
+    <label for="klantNaam">Naam:</label>
+    <input type="text" name="klantNaam" value="<?= htmlspecialchars($klantData['klantNaam']) ?>" required><br>
+
+    <label for="klantEmail">Email:</label>
+    <input type="email" name="klantEmail" value="<?= htmlspecialchars($klantData['klantEmail']) ?>" required><br>
+
+    <label for="klantAdres">Adres:</label>
+    <input type="text" name="klantAdres" value="<?= htmlspecialchars($klantData['klantAdres']) ?>" required><br>
+
+    <label for="klantPostcode">Postcode:</label>
+    <input type="text" name="klantPostcode" value="<?= htmlspecialchars($klantData['klantPostcode']) ?>" required><br>
+
+    <label for="klantWoonplaats">Woonplaats:</label>
+    <input type="text" name="klantWoonplaats" value="<?= htmlspecialchars($klantData['klantWoonplaats']) ?>" required><br><br>
+
+    <input type="submit" value="Wijzigen">
+</form>
 
 <a href="read.php">Terug</a>
 
 </body>
 </html>
-
-<?php
-    } else {
-        echo "Geen klantId opgegeven<br>";
-    }
-?>
